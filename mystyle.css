@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/hello.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.img-pd{
+    width: 100px;
+}
+
+.header::after{
+    content: '';
+    display: table;
+    float: left;
+}
+.nav{
+    float: right;
+}
