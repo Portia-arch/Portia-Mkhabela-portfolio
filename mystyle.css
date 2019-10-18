@@ -164,6 +164,10 @@ h1 {
   position: relative;
   width: 50%;
 }
+.item2 {
+  grid-area: mytext;
+}
+
 ul {
   margin: 0;
   list-style: none;
