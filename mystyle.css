@@ -10,8 +10,9 @@
 }
 
 .navbar {
+  color: aliceblue;
   background: rgba(74, 196, 196, 0.281);
-  color: black;
+  color: white;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -19,6 +20,7 @@
   padding-top: 0.8px;
   z-index: 999;
   box-shadow: black;
+  
 }
 
 .navbar a:hover {
@@ -38,6 +40,7 @@ body {
   background-size: cover;
   padding: 0;
   margin: 0;
+
 }
 .button {
   background-color: rgba(182, 106, 118, 0.486);
@@ -98,9 +101,10 @@ li {
 p {
   font-size: 30px;
   font-family: "Franklin Gothic Medium";
-  font-style: normal;;
+  font-style: normal;
   margin: 10px;
   color: black;
+  text-align: center;
 }
 h1 {
   font-size: 50px;
@@ -115,8 +119,7 @@ h1 {
 
 .image {
   opacity: 1;
-  display: block;
-  width: 300px;
+  width: 200px;
   height: 300px;
   transition: 5s ease;
   backface-visibility: visible;
@@ -125,13 +128,16 @@ h1 {
 .image:hover {
   opacity: 0.3;
 }
-
-.rotateimg90 {
-  -webkit-transform:rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+.about-image {
+  opacity: 1;
+  width: 400px;
+  height: 500px;
+  transition: 5s ease;
+  backface-visibility: visible;
+  
+}
+.about-image :hover{
+  opacity: 0.5;
 }
 
 .item {
@@ -174,5 +180,5 @@ ul {
   padding: 10px;
 }
 .textfield {
-  float: right;
+  text-align: center;
 }
