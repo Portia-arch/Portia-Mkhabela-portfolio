@@ -4,38 +4,38 @@ body {
   height: 100%;
 }
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
   text-align: center;
-  display: block;
+  display: inline;
   padding: 8px 16px;
   text-align: left;
 }
 
 .nav {
   color: aliceblue;
-  float: right;
-  padding-top: 10px;
+  text-align: right;
+  /* padding: 5px; */
+  font-size: 30px;
+  display: inline;
 }
 
-.navbar {
-  background-color: rgba(165, 42, 42, 0.055);
+.navbar a {
   text-decoration: none;
-  display: inline-block;
+  display:block;
   font-size: 30px;
-  padding-top: 0.8px;
   z-index: 999;
   box-shadow: black;
 }
 
 .navbar a:hover {
   background: black;
-  color: cyan;
+  color:rgb(182, 93, 61);
 }
 
 .nav i:hover {
   background: black;
-  color: cyan;
+  color:rgb(182, 93, 61);
 }
 
 body {
@@ -50,11 +50,12 @@ body {
 .button {
   background-color: rgba(182, 106, 118, 0.486);
   color: white;
+  display: inline-block;
   border: 2px;
   text-decoration: none;
   margin: 10px;
   padding: 10px;
-  /*-webkit-transition-duration: 0.4;*/
+  -webkit-transition-duration: 0.4;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -64,8 +65,12 @@ body {
 }
 
 .footer {
+  font-size: 30px;
+  text-align: center;
   height: 50px;
   margin-top: 265px;
+  padding-top: 30px;
+  background-color: rgba(165, 42, 42, 0.055);
 }
 .header1 {
   text-align: right;
@@ -84,41 +89,53 @@ li {
 }
 
 .header {
-  font-family: "Cormorant", serif;
+  font-family: 'Raleway', sans-serif;
   position: relative;
   float: left;
+  background-color: rgba(165, 42, 42, 0.055);
 }
 p {
-  font-size: 40px;
-  font-family: "Cormorant", serif;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  margin: 10px;
+  margin: 30px;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 p1 {
-  color: wheat;
-  font-size: 30px;
-  font-weight: bold;
+  color: rgb(245, 246, 248);
+  font-size: 100x;
+  font-weight: 900;
+  text-align: left;
+  padding: 30px;
+
 }
+p2 {
+  text-align: center;
+  color: azure;
+}
+
 h1 {
   color: aliceblue;
   font-size: 50px;
-  font-family: "Cormorant", serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
+
 }
 * {
   box-sizing: border-box;
 }
 
 .image {
+  display: block;
   opacity: 1;
   width: 200px;
   height: 300px;
-  transition: 5s ease;
-  backface-visibility: visible;
+  transition: 10s ease;
+  backface-visibility: hidden;
+
 }
 
 .image:hover {
@@ -135,6 +152,11 @@ h1 {
 }
 .about-image :hover {
   opacity: 0.5;
+}
+.image{
+  padding: 50px;
+  display: inline;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .home-img {
@@ -178,28 +200,29 @@ ul {
   margin: 0;
   list-style: none;
 }
-.header1 {
-  text-align: center;
-}
+
 .text {
-  background-color: rgba(228, 153, 125, 0.089);
   color: white;
   font-size: 20px;
   padding: 16px 32px;
   text-align: center;
-  font-family: "Cormorant", serif;
+  font-family: 'Raleway', sans-serif;
 }
 .boxes {
-  margin: 20px;
-  padding: 30px;
-  font-family: "Cormorant", serif;
+  text-align: center;
+  margin-right: 200px;
+  padding-bottom: 100px;
+  font-family: 'Raleway', sans-serif;
   color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
 .textfield {
   text-align: center;
 }
 .about-text {
   text-align: left;
+  padding-top: 10px;
 }
